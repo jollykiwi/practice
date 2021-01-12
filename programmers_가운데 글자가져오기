@@ -1,0 +1,10 @@
+def solution(s):
+    answer = ''
+    a = len(s) % 2
+    b = len(s) //2
+    if a == 0:
+        answer = s[(b -1):(b + 1)] # [0]부터 시작하는걸 잊으면 안됨
+        # 2:4 로 해야 s[2],s[3]을 출력 
+    else:
+        answer = s[b] 
+    return answer
